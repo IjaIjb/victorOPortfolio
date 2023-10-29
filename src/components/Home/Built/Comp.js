@@ -12,6 +12,7 @@ const Comp = (props) => {
     subFour,
     buttonText,
     color,
+    colorFoot
   } = props;
 
   const [studio, setStudio] = useState(false);
@@ -61,7 +62,7 @@ const Comp = (props) => {
 
               <div className="  mt-auto ">
                 <div className=" flex mt-auto items-end w-full">
-                <div className="bg-[#FBECFF] w-full  flex  gap-[34px] justify-center items-center py-4 rounded-[8px] ">
+                <div className={`${colorFoot === '1' ? 'bg-[#FBECFF]' : colorFoot === '2' ? 'bg-[#E4EDFF]' : colorFoot === '3' ? 'bg-[#FFF4DF]' : 'bg-[#FFE8E8]'} w-full  flex  gap-[34px] justify-center items-center py-4 rounded-[8px]`}>
                   <h5 className="text-[#2A0435] font-sub text-[16px] font-[600]">
                     {buttonText}
                   </h5>

@@ -136,6 +136,7 @@ const Main = () => {
             icon={man}
             subOne="Industry"
             color={'1'}
+            colorFoot={'1'}
             subTwo="Agency"
             subThree="Design"
             buttonText="Visit our studio"
@@ -150,6 +151,7 @@ const Main = () => {
             icon={hG}
             subOne="Industry"
             color={'2'}
+            colorFoot={'2'}
             subTwo="Health"
             subThree="Nonprofit"
             buttonText="Visit our website"
@@ -163,6 +165,7 @@ const Main = () => {
             subOne="Industry"
             subTwo="Design"
             color={'3'}
+            colorFoot={'3'}
             subThree="Media"
             subFour="Growth"
             buttonText="Read my thoughts"
@@ -176,6 +179,7 @@ const Main = () => {
             icon={ld}
             subOne="Industry"
             color={'4'}
+            colorFoot={'4'}
             subTwo="Life"
             subThree="Leadership"
             subFour="Podcast"
@@ -193,6 +197,7 @@ const Main = () => {
           <Comp
             icon={byteProd}
             color={'1'}
+            colorFoot={'1'}
             subOne="Industry"
             subTwo="Finance"
             subThree="SaaS"
@@ -209,6 +214,7 @@ const Main = () => {
             icon={wyteProd}
             subOne="Industry"
             color={'2'}
+            colorFoot={'2'}
             subTwo="Finance"
             subThree="SaaS"
             buttonText="View website"
@@ -221,6 +227,7 @@ const Main = () => {
             subOne="Industry"
             subTwo="Health"
             color={'3'}
+            colorFoot={'3'}
             subThree="SaaS"
             buttonText="View website"
             text="Medipt"
@@ -231,6 +238,7 @@ const Main = () => {
             icon={com}
             subOne="Industry"
             color={'4'}
+            colorFoot={'4'}
             subTwo="Soon"
             subThree="Soon"
             text="Coming Soon"
@@ -246,6 +254,7 @@ const Main = () => {
             icon={prun}
             subOne="Industry"
             color={'1'}
+            colorFoot={'1'}
             subTwo="Agency"
             subThree="Software Dev"
             buttonText="Read case study"
@@ -260,6 +269,7 @@ const Main = () => {
             icon={cowry}
             subOne="Industry"
             color={'2'}
+            colorFoot={'2'}
             subTwo="Fintech"
             subThree="SaaS"
             buttonText="Read case study"
