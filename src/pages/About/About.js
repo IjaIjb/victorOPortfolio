@@ -38,7 +38,7 @@ const About = () => {
   };
 
   return (
-    <div className="bg-[#FFF8FA]">
+    <div className="bg-[#FFF8FA] w-full">
       <div className="px-5 md:px-0 md:mx-16 pt-10">
         <div className="flex justify-between">
         <div className="sticky top-10 left-0">

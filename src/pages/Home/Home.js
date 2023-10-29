@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="bg-[#FFF8FA]">
+    <div className="w-full">
+    <div className="bg-[#FFF8FA] w-full">
       <div className="px-5 md:px-0 md:mx-16 pt-10">
         <div className="flex justify-between">
           <div className="sticky top-10 left-0">
@@ -95,6 +96,7 @@ const Home = () => {
       <div>
         <Footer />
       </div>
+    </div>
     </div>
   );
 };
