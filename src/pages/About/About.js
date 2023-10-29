@@ -38,7 +38,7 @@ const About = () => {
   };
 
   return (
-    <div>
+    <div className="bg-[#FFF8FA]">
       <div className="px-5 md:px-0 md:mx-16 pt-10">
         <div className="flex justify-between">
         <div className="sticky top-10 left-0">
@@ -260,8 +260,9 @@ const About = () => {
             </div>
           </div>
 
-          <div className="sticky top-10 left-0  border-[1px] h-fit px-[12px] border-[#E0E0E0] rounded-[12px]">
-            <div className="border-b-[1px] p-3.5 border-b-[#E0E0E0]">     
+          <div className="sticky flex justify-center top-10 left-0  border-[1px] h-fit px-[12px] border-[#E0E0E0] rounded-[12px]">
+            <div className="">
+            <div className="border-b-[1px] flex justify-center py-4 px-3.5 border-b-[#E0E0E0]">     
               <Link
                 className="text-[#525252] font-sub text-[12px] font-[700] "
                 to="/"
@@ -270,7 +271,7 @@ const About = () => {
               </Link>
             </div>
 
-            <div  className="border-b-[1px] p-3.5 border-b-[#E0E0E0]">
+            <div  className="border-b-[1px] py-4 px-3.5 flex justify-center border-b-[#E0E0E0]">
               <Link
                 className="text-[#525252] font-sub text-[12px] font-[700] "
                 to="/about"
@@ -279,13 +280,14 @@ const About = () => {
               </Link>
             </div>
 
-            <div  className="border-b-[1px] p-3.5 border-b-[#E0E0E0]">
+            <div  className="py-4 px-3.5 flex justify-center ">
               <a
                 className="text-[#525252] font-sub text-[12px] font-[700] "
                 href="#bot"
               >
                 Contact
               </a>
+            </div>
             </div>
           </div>
         </div>

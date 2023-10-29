@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'sans': ['"TT Trailers Trial"'],
-      'sub': ['arial'],
+      'sub': ['Noto Sans', 'arial'],
       'serif': ['ui-serif', 'Georgia'],
       'mono': ['ui-monospace', 'SFMono-Regular'],
       // 'display': ['Oswald', ...],

@@ -11,6 +11,7 @@ const Comp = (props) => {
     subThree,
     subFour,
     buttonText,
+    color,
   } = props;
 
   const [studio, setStudio] = useState(false);
@@ -25,15 +26,15 @@ const Comp = (props) => {
 
   return (
     <div>
-      <div className="flex h-full gap-[8px]">
+      <div className="flex h-full w-full gap-[8px]">
         <div
           onMouseOver={handleStudioMouseOver}
           onClick={handleStudioMouseOver}
           onMouseLeave={handleStudioMouseOut}
-          className="flex text-left justify-center"
+          className="flex w-full text-left justify-center"
         >
           {!studio ? (
-            <div className="flex flex-col">
+            <div className="flex w-full flex-col">
               <img className="" src={icon} alt="/" />
               <div className="text-start ">
                 <h4 className="text-[#000] text-[32px] font-[700] font-sans">
@@ -46,8 +47,8 @@ const Comp = (props) => {
             </div>
           ) : (
             <div className=" w-full h-full relative ">
-            <div className="bg-[#FDF6FF] h-full flex flex-col  relative w-full  rounded-[12px] px-[40px] py-[50px]">
-              <div className="flex gap-[20px] font-sub text-[16px]  ">
+            <div className={`${color === '1' ? 'bg-[#FDF6FF]' : color === '2' ? 'bg-[#F6F9FF]' : color === '3' ? 'bg-[#FFFCF6]' : 'bg-[#FFF4F4]'} h-full flex flex-col  relative w-full  rounded-[12px] px-[40px] py-[50px]`}>
+              <div className="flex gap-[20px] w-full font-sub text-[16px]  ">
                 <div className="text-[#C193D0] font-[400]">{subOne}</div>
                 <div className="text-[#2A0435]  font-[600]">{subTwo}</div>
                 <div className="text-[#2A0435]  font-[600]">{subThree}</div>

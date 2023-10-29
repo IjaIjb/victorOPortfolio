@@ -86,7 +86,7 @@ const Main = () => {
           {showBuilt ? (
             <div className="text-[#353535] border-b-2">Built(ing)</div>
           ) : (
-            <div>Built(ing)</div>
+            <div className="hover:text-[#3F52FF]">Built(ing)</div>
           )}
         </div>
         <div
@@ -96,7 +96,7 @@ const Main = () => {
           {product ? (
             <div className="text-[#353535] border-b-2">Product & UX</div>
           ) : (
-            <div>Product & UX</div>
+            <div className="hover:text-[#3F52FF]">Product & UX</div>
           )}
         </div>
         <div
@@ -106,7 +106,7 @@ const Main = () => {
           {brand ? (
             <div className="text-[#353535] border-b-2">Brand & Marketing</div>
           ) : (
-            <div>Brand & Marketing</div>
+            <div className="hover:text-[#3F52FF]">Brand & Marketing</div>
           )}
         </div>
         <div
@@ -116,7 +116,7 @@ const Main = () => {
           {photo ? (
             <div className="text-[#353535] border-b-2">Photography</div>
           ) : (
-            <div>Photography</div>
+            <div className="hover:text-[#3F52FF]">Photography</div>
           )}
         </div>
         <div
@@ -126,7 +126,7 @@ const Main = () => {
           {resources ? (
             <div className="text-[#353535] border-b-2">Resources</div>
           ) : (
-            <div>Resources</div>
+            <div className="hover:text-[#3F52FF]">Resources</div>
           )}
         </div>
       </div>
@@ -135,6 +135,7 @@ const Main = () => {
           <Comp
             icon={man}
             subOne="Industry"
+            color={'1'}
             subTwo="Agency"
             subThree="Design"
             buttonText="Visit our studio"
@@ -148,6 +149,7 @@ const Main = () => {
           <Comp
             icon={hG}
             subOne="Industry"
+            color={'2'}
             subTwo="Health"
             subThree="Nonprofit"
             buttonText="Visit our website"
@@ -160,6 +162,7 @@ const Main = () => {
             icon={tdgm}
             subOne="Industry"
             subTwo="Design"
+            color={'3'}
             subThree="Media"
             subFour="Growth"
             buttonText="Read my thoughts"
@@ -172,6 +175,7 @@ const Main = () => {
           <Comp
             icon={ld}
             subOne="Industry"
+            color={'4'}
             subTwo="Life"
             subThree="Leadership"
             subFour="Podcast"
@@ -188,6 +192,7 @@ const Main = () => {
         <div className="grid grid-cols-2 gap-[20px] mb-20 mt-5">
           <Comp
             icon={byteProd}
+            color={'1'}
             subOne="Industry"
             subTwo="Finance"
             subThree="SaaS"
@@ -203,6 +208,7 @@ const Main = () => {
           <Comp
             icon={wyteProd}
             subOne="Industry"
+            color={'2'}
             subTwo="Finance"
             subThree="SaaS"
             buttonText="View website"
@@ -214,6 +220,7 @@ const Main = () => {
             icon={medipt}
             subOne="Industry"
             subTwo="Health"
+            color={'3'}
             subThree="SaaS"
             buttonText="View website"
             text="Medipt"
@@ -223,6 +230,7 @@ const Main = () => {
           <Comp
             icon={com}
             subOne="Industry"
+            color={'4'}
             subTwo="Soon"
             subThree="Soon"
             text="Coming Soon"
@@ -237,6 +245,7 @@ const Main = () => {
           <Comp
             icon={prun}
             subOne="Industry"
+            color={'1'}
             subTwo="Agency"
             subThree="Software Dev"
             buttonText="Read case study"
@@ -250,6 +259,7 @@ const Main = () => {
           <Comp
             icon={cowry}
             subOne="Industry"
+            color={'2'}
             subTwo="Fintech"
             subThree="SaaS"
             buttonText="Read case study"
@@ -320,7 +330,7 @@ const Main = () => {
             </h4>
           </div>
         ) : (
-          <h4 className="font-sub text-[14px] font-[400] text-[#BABABA]">
+          <h4 className="font-sub text-[14px] hover:text-[#3F52FF] font-[400] text-[#BABABA]">
              Built(ing)
           </h4>
         )}
@@ -333,20 +343,20 @@ const Main = () => {
             </h4>
           </div>
         ) : (
-          <h4 className="font-sub text-[14px] font-[400] text-[#BABABA]">
+          <h4 className="font-sub text-[14px] hover:text-[#3F52FF]  font-[400] text-[#BABABA]">
             Product & UX
           </h4>
         )}
 </a>
 <a href="#top" onClick={handleBrand} >
         {brand ? (
-          <div className="flex w-[169px] py-[10px] px-[38px] justify-center items-center gap-10px rounded-[12px] border-[1px] border-[#EEDBDB] bg-[#F6EEF1]">
+          <div className="flex w-fit py-[10px] px-[38px] justify-center items-center gap-10px rounded-[12px] border-[1px] border-[#EEDBDB] bg-[#F6EEF1]">
             <h4 className="font-sub text-[14px] font-[400] text-[#353535]">
               Brand & Marketing
             </h4>
           </div>
         ) : (
-          <h4 className="font-sub text-[14px] font-[400] text-[#BABABA]">
+          <h4 className="font-sub text-[14px] hover:text-[#3F52FF]  font-[400] text-[#BABABA]">
             Brand & Marketing
           </h4>
         )}
@@ -359,7 +369,7 @@ const Main = () => {
             </h4>
           </div>
         ) : (
-          <h4 className="font-sub text-[14px] font-[400] text-[#BABABA]">
+          <h4 className="font-sub text-[14px] hover:text-[#3F52FF]  font-[400] text-[#BABABA]">
             Photography
           </h4>
         )}
@@ -372,7 +382,7 @@ const Main = () => {
             </h4>
           </div>
         ) : (
-          <h4 className="font-sub text-[14px] font-[400] text-[#BABABA]">
+          <h4 className="font-sub text-[14px] hover:text-[#3F52FF]  font-[400] text-[#BABABA]">
             Resources
           </h4>
         )}
